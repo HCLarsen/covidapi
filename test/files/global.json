@@ -1,0 +1,9 @@
+{
+  "count": 1,
+  "date": "Sat, 21 Mar 2020 00:00:00 GMT",
+  "result": {
+    "confirmed": 304524,
+    "deaths": 12973,
+    "recovered": 91499
+  }
+}
