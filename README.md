@@ -1,6 +1,6 @@
 # covidapi
 
-TODO: Write a description here
+This is a Crystal wrapper for the COVID19 API found at https://covidapi.info/.
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      covidapi:
-       github: your-github-user/covidapi
+       github: HCLarsen/covidapi
    ```
 
 2. Run `shards install`
@@ -22,13 +22,9 @@ require "covidapi"
 
 TODO: Write usage instructions here
 
-## Development
-
-TODO: Write development instructions here
-
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/covidapi/fork>)
+1. Fork it (<https://github.com/HCLarsen/covidapi/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +32,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Chris Larsen](https://github.com/your-github-user) - creator and maintainer
+- [Chris Larsen](https://github.com/HCLarsen) - creator and maintainer
