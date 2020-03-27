@@ -1,6 +1,6 @@
-# covidapi
+# Covid API
 
-This is a Crystal wrapper for the COVID19 API found at https://covidapi.info/.
+This is a Crystal wrapper for the [COVID19 API](https://covidapi.info/).
 
 Currently, it doesn't cover all the options of the API. The two main classes are GlobalHistory and CountryHistory. Values of most other API endpoints can be determined from those two.
 
@@ -38,8 +38,6 @@ canada = Covidapi.getCountryHistory("CAN")
 canada.count                        #=> 63
 canada.results.last_value.confirmed #=> 2790
 ```
-
-TODO: Write usage instructions here
 
 ## Contributing
 
