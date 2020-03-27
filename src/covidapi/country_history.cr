@@ -1,10 +1,6 @@
-require "./result"
+require "./historic"
 
 module Covidapi
-  class CountryHistory
-    JSON.mapping(
-      count: Int32,
-      results: { type: Hash(String, Covidapi::Result), key: "result" }
-    )
+  class CountryHistory < Historic
   end
 end
