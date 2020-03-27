@@ -1,0 +1,10 @@
+{
+  "count": 1,
+  "result": {
+    "2020-03-24":{
+      "confirmed":2790,
+      "deaths":26,
+      "recovered":0
+    }
+  }
+}
