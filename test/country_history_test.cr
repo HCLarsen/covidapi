@@ -10,8 +10,13 @@ class CountryHistoryTest < Minitest::Test
 
     history = Covidapi::CountryHistory.from_json(json)
     assert_equal 63, history.count
+    assert_equal "2020-03-24", history.last_date
+    assert_equal "2020-01-26", history.first_case
 
-    result = history.results["2020-03-09"]
+    result = history["2020-03-09"]
+    assert_equal 77, result.confirmed
+
+    result = history[Time.utc(2020, 3, 9)]
     assert_equal 77, result.confirmed
   end
 end
