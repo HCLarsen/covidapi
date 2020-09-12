@@ -2,12 +2,14 @@ require "./result"
 
 module Covidapi
   abstract class Historic
-    PATTERN = "%Y-%m-%d"
+    include JSON::Serializable
 
-    JSON.mapping(
-      count: Int32,
-      results: { type: Hash(String, Covidapi::Result), key: "result", setter: false }
-    )
+    getter count : Int32
+
+    @[JSON::Field(key: "result")]
+    getter results : Hash(String, Covidapi::Result)
+
+    PATTERN = "%Y-%m-%d"
 
     def [](date : String)
       @results[date]

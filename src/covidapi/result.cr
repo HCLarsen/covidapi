@@ -2,10 +2,10 @@ require "json"
 
 module Covidapi
   struct Result
-    JSON.mapping(
-      confirmed: Int32,
-      deaths: Int32,
-      recovered: Int32
-    )
+    include JSON::Serializable
+
+    getter confirmed : Int32
+    getter deaths : Int32
+    getter recovered : Int32
   end
 end
